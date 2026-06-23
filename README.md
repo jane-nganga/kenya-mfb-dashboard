@@ -13,14 +13,6 @@ This project analyses the financial health, credit risk exposure, and depositor 
 
 The analysis was built entirely from scratch — extracting structured data from PDF regulatory reports, modelling it in MySQL, and visualising findings in a three-page Power BI dashboard. The project replicates the kind of end-to-end analytical workflow used in credit risk and portfolio analytics roles in Kenya's financial services sector.
 
-## Dashboard Preview
-
-![Sector Overview](images/page1_sector_overview.jpg)
-![Credit Risk Analysis](images/page2_credit_risk.jpg)
-![Depositor Risk](images/page3_depositor_risk.jpg)
-
-
-
 Business Questions Answered
 
 How healthy is Kenya's MFB sector overall — and which institutions are driving sector-wide losses?
@@ -30,8 +22,13 @@ Which institutions pose the highest risk to depositors — and what is driving t
 
 Data Sources
 
-SourceReportData ExtractedCentral Bank of Kenya (CBK)Bank Supervision Annual Report 2024NPL data, deposit accounts, protected deposits. 
-Note: The source is a publicly available PDF report. Data was manually extracted from tables in the report and structured into CSV files for database import. No proprietary or confidential data was used.
+| Source |                            | Report |                            |Data Extracted |
+
+| Central Bank of Kenya (CBK)         | Bank Supervision Annual Report 2024 | NPL data, deposit accounts, protected deposits, MFB performance |
+
+| Kenya Bankers Association (KBA)     | State of Banking Industry Report 2025 | Sector context and market benchmarks | 
+
+Note: The sources are publicly available PDF reports. Data was manually extracted from tables in the reports and structured into CSV files for database import. No proprietary or confidential data was used.
 
 
 Data Engineering
@@ -224,3 +221,4 @@ Recommendations
 About
 
 Built by Jane Ng'ang'a — Data Analyst specialising in credit and portfolio analytics.
+[LinkedIn](https://www.linkedin.com/in/ng-ang-a-jane/)

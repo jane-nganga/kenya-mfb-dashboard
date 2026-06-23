@@ -124,6 +124,26 @@ ORDER BY pct_deposits_protected ASC;
 -- SECTION 5: COMBINED ANALYSIS (JOIN)
 -- =============================================
 
+-- 4.2 Combined depositor risk profile
+-- Identifies institutions with low deposit protection AND loss-making status
+-- The highest risk combination for depositors
+SELECT
+    p.mfb_name,
+    CASE
+        WHEN p.net_profit_2024_ksh_m > 0 THEN 'Profitable'
+        WHEN p.net_profit_2024_ksh_m = 0 THEN 'Break Even'
+        ELSE 'Loss Making'
+    END AS profitability_status,
+    ROUND((pd.dec24_insured_ksh_m /
+        NULLIF(pd.dec24_customer_ksh_m, 0)) * 100, 2) AS pct_deposits_protected,
+    ROUND((p.total_expenses_2024_ksh_m /
+        NULLIF(p.total_income_2024_ksh_m, 0)) * 100, 2) AS cost_to_income_pct,
+    n.gross_npl_ksh_m
+FROM performance_by_mfb p
+LEFT JOIN protected_deposits_by_mfb pd ON p.mfb_name = pd.mfb_name
+LEFT JOIN npl_by_mfb n ON p.mfb_name = n.mfb_name
+ORDER BY pct_deposits_protected ASC;
+
 -- 5.1 NPL exposure vs profitability
 -- INNER JOIN: only returns banks present in both tables (all 14 in this case)
 SELECT

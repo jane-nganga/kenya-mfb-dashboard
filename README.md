@@ -215,7 +215,11 @@ Daraja and Maisha MFBs have incomplete data across all four source tables
 NPL classification methodology may vary by institution — CBK guidelines provide a framework but application is institution-specific
 All figures are in Ksh Millions as reported in CBK source documents
 
+Recommendations 
 
+1. CBK should prioritise supervisory attention on SMEP and DARAJA given zero provision coverage against real NPL exposure
+2. SALAAM requires an operational restructuring review — its risk profile is cost-driven, not credit-driven, and standard NPL-focused monitoring frameworks would miss it entirely
+3. Rafiki's deposit account growth despite a 72% NPL-to-deposits ratio suggests market discipline is lagging risk signals — a depositor awareness gap worth monitoring
 
 About
 

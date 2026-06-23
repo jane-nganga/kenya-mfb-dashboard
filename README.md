@@ -13,6 +13,13 @@ This project analyses the financial health, credit risk exposure, and depositor 
 
 The analysis was built entirely from scratch — extracting structured data from PDF regulatory reports, modelling it in MySQL, and visualising findings in a three-page Power BI dashboard. The project replicates the kind of end-to-end analytical workflow used in credit risk and portfolio analytics roles in Kenya's financial services sector.
 
+## Dashboard Preview
+
+![Sector Overview](images/page1_sector_overview.jpg)
+![Credit Risk Analysis](images/page2_credit_risk.jpg)
+![Depositor Risk](images/page3_depositor_risk.jpg)
+
+
 
 Business Questions Answered
 
@@ -143,6 +150,7 @@ Bar chart: Net profit/loss by MFB with profitability colour coding
 Donut chart: Profitability breakdown (64% loss-making, 29% profitable, 7% break-even)
 Clustered bar chart: Income vs expenses by MFB
 
+(images/page1_sector_overview.jpg)
 
 Page 2 — Credit Risk Analysis
 
@@ -151,6 +159,7 @@ Bar chart: Provision coverage % with sector average reference line at 29%
 Scatter plot: NPL exposure vs profitability (colour-coded by profitability status)
 Heatmap table: MFB risk summary with conditional formatting on coverage % and NPL/deposits %
 
+(images/page2_credit_risk.jpg)
 
 Page 3 — Depositor Risk
 
@@ -159,7 +168,7 @@ Bar chart: NPL as % of customer deposits per MFB
 Bar chart: Deposit account growth 2023–2024
 Heatmap table: Full depositor risk summary
 
-
+(images/page3_depositor_risk.jpg)
 
 Repository Structure
 
